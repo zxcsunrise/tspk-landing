@@ -13,7 +13,6 @@ $("body").on('click', '[href*="#"]', function (e) {
 	}, 1000);
 	e.preventDefault();
 });
-
 new Swiper(".mainSlider", {
     navigation: {
       nextEl: ".swiper-button-next",

@@ -213,7 +213,16 @@ ul, ol {
 .greeting .greetingBlock .info-block {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 28px;
+}
+.greeting .greetingBlock .info-block .img {
+  width: 71px;
+}
+.greeting .greetingBlock .info-block .img img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .greeting .greetingBlock .info-block .title {
   text-align: center;
@@ -234,31 +243,29 @@ ul, ol {
 }
 .aboutUsSection .aboutUsBlock .info-block {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 32px;
 }
 .aboutUsSection .aboutUsBlock .info-block .text-holder {
-  width: 1050px;
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 .aboutUsSection .aboutUsBlock .info-block .text-holder p {
-  font-size: var(--fz36);
+  font-size: var(--fz28);
 }
 .aboutUsSection .aboutUsBlock .info-block .img-holder {
   display: flex;
-  width: 690px;
-  flex-direction: column;
   justify-content: space-between;
 }
 .aboutUsSection .aboutUsBlock .info-block .img-holder .img {
-  width: 690px;
+  width: 518px;
 }
 .aboutUsSection .aboutUsBlock .info-block .img-holder .img img {
   width: 100%;
-  border-radius: 32px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  border-radius: 270px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .whySection .whyBlock {
@@ -272,17 +279,20 @@ ul, ol {
   gap: 40px;
 }
 .whySection .whyBlock .info-block .card {
+  background-image: url("../img/cardbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 30px;
-  border: 2px solid #007195;
   border-radius: 70px;
-  background: none;
 }
 .whySection .whyBlock .info-block .card span {
   font-weight: 600;
+  color: #F0F0F0;
   font-size: var(--fz32);
 }
 .whySection .whyBlock .info-block .card p {
-  font-size: var(--fz32);
+  color: #F0F0F0;
+  font-size: var(--fz28);
 }
 
 .contactSection .contactBlock {
