@@ -1,1 +1,8 @@
-/*# sourceMappingURL=mobile.css.map */
+@media screen and (max-width: 1600px) {
+  :root {
+    --container: 1320px;
+  }
+  .aboutUsSection .aboutUsBlock .info-block .img-holder .img {
+    width: 400px;
+  }
+}/*# sourceMappingURL=mobile.css.map */
